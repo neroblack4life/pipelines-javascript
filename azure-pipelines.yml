@@ -6,7 +6,10 @@
 trigger:
 - main
 
-pool: Default
+pool:
+  name: Default
+  demands: 
+  - Agent.Name -equals QA-Agent01
 
 steps:
 - task: NodeTool@0
